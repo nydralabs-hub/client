@@ -1,27 +1,39 @@
+import { useState } from "react";
+
+const questions = [
+  {
+    q: "Preciso entender de finanças?",
+    a: "Não. O Preciko faz todos os cálculos automaticamente.",
+  },
+
+  {
+    q: "Funciona para qualquer negócio?",
+    a: "Sim. Produtos físicos ou serviços.",
+  },
+
+  {
+    q: "Posso testar antes?",
+    a: "Sim. Existe plano gratuito.",
+  },
+];
+
 export default function FAQ() {
-  const faqs = [
-    {
-      q: "Preciso entender de finanças?",
-      a: "Não. O app faz todos os cálculos para você.",
-    },
-    {
-      q: "Funciona para qualquer negócio?",
-      a: "Sim, produtos ou serviços.",
-    },
-  ];
+  const [open, setOpen] = useState(null);
 
   return (
-    <section className="py-20">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center">
-          Perguntas Frequentes
-        </h2>
+    <section className="faq-section">
+      <div className="container">
+        <h2 className="section-title">Perguntas frequentes</h2>
 
-        {faqs.map((faq, i) => (
-          <div key={i} className="mb-6">
-            <h3 className="font-bold">{faq.q}</h3>
+        {questions.map((item, i) => (
+          <div
+            key={i}
+            className="faq-item"
+            onClick={() => setOpen(open === i ? null : i)}
+          >
+            <div className="faq-question">{item.q}</div>
 
-            <p className="text-gray-600">{faq.a}</p>
+            {open === i && <div className="faq-answer">{item.a}</div>}
           </div>
         ))}
       </div>

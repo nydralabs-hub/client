@@ -1,13 +1,13 @@
 export default function CTA() {
   return (
-    <section className="py-20 bg-green-500 text-white text-center">
-      <h2 className="text-3xl font-bold mb-6">
-        Comece hoje a precificar corretamente
-      </h2>
+    <section className="cta">
+      <div className="container cta-box">
+        <h2>Comece hoje a precificar como um profissional</h2>
 
-      <button className="bg-white text-green-600 px-8 py-4 rounded-lg">
-        Baixar o App
-      </button>
+        <p>Evite prejuízo e descubra seu lucro real.</p>
+
+        <button className="btn-primary">Baixar o App</button>
+      </div>
     </section>
   );
 }
