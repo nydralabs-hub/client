@@ -12,7 +12,7 @@ export default function HowItWorks() {
 
     {
       title: "Veja o preço ideal",
-      desc: "O Preciko calcula automaticamente.",
+      desc: "O APPRIX calcula automaticamente.",
     },
   ];
 

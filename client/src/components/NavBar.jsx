@@ -1,13 +1,16 @@
 import { useState } from "react";
 import "../styles/navbar.css";
-
+import mockup from "../assets/logo-3.png";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="container nav-content">
-        <div className="logo">Preciko</div>
+        {/* <div className="logo">APPRIX</div> */}
+        <div className="logo-wrapper">
+          <img className="logo-image" src={mockup} alt="Apprix" sizes={40} />
+        </div>
 
         <div className={`nav-links ${open ? "active" : ""}`}>
           <a href="#features">Funcionalidades</a>

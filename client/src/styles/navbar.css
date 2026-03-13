@@ -22,8 +22,22 @@
 /* LOGO */
 
 .logo {
-  font-size: 22px;
-  font-weight: 600;
+  /* font-size: 22px;
+  font-weight: 600; */
+}
+
+/* IMAGE */
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 220px;
+
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.15));
 }
 
 /* LINKS */

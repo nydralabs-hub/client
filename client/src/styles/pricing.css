@@ -29,6 +29,7 @@
   color: white;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  position: relative;
 }
 
 .pricing-card:hover {
@@ -38,6 +39,8 @@
 /* CORES */
 
 .pink {
+  border-color: #ec4899;
+  border-width: 1px;
   background: linear-gradient(180deg, #ec4899, #db2777);
 }
 
@@ -50,7 +53,11 @@
 }
 
 .purple {
-  background: linear-gradient(180deg, #8b5cf6, #6d28d9);
+  background: linear-gradient(180deg, #4d49e4, #2c27b1);
+}
+
+.green {
+  background: linear-gradient(180deg, #34c759, #1d9f3d);
 }
 
 /* HEADER */
@@ -65,13 +72,29 @@
   opacity: 0.8;
 }
 
+.plan-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.plan-old {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.plan-old s {
+  text-decoration: line-through;
+}
+
 .plan-price {
   font-size: 34px;
   margin: 10px 0;
 }
 
 .plan-period {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.8;
 }
 
@@ -99,9 +122,16 @@
 
 /* BUTTON */
 
+.plan-button-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .plan-button {
   margin-top: 20px;
-  width: 100%;
+  /* width: 100%; */
   padding: 12px;
   border: none;
   border-radius: 8px;
@@ -109,6 +139,7 @@
   color: black;
   font-weight: 600;
   cursor: pointer;
+  margin: 10px;
 }
 
 /* MOBILE CAROUSEL */

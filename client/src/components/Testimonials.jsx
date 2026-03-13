@@ -2,7 +2,7 @@ const testimonials = [
   {
     name: "João Silva",
     business: "Pizzaria",
-    text: "Depois do Preciko parei de vender no prejuízo.",
+    text: "Depois do APPRIX parei de vender no prejuízo.",
   },
 
   {

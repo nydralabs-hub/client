@@ -4,52 +4,62 @@ const plans = [
   {
     name: "Starter",
     price: "Free",
+    period: "30 dias",
     color: "pink",
     features: [
-      { label: "Lorem ipsum dolor sit amet", ok: true },
-      { label: "Ut wisi enim ad minim veniam", ok: true },
-      { label: "Duis autem vel eum", ok: false },
-      { label: "Sed diam nonummy nibh", ok: false },
-      { label: "Vel illum dolore eu feugiat", ok: false },
+      { label: "Relatórios simples", ok: true },
+      { label: "Cadastrado limitado", ok: true },
+      { label: "Suporte por e-mail", ok: false },
+      { label: "Backup local", ok: false },
+      { label: "Relatórios detalhados", ok: false },
+      { label: "Suporte WhatsApp", ok: false },
+      { label: "Acesso vitalício a updates", ok: false },
     ],
   },
 
   {
-    name: "Business",
+    name: "Básico",
+    oldPrice: "$19.99",
     price: "$9.99",
-    color: "orange",
+    period: "por mês",
+    color: "purple",
     features: [
-      { label: "Lorem ipsum dolor sit amet", ok: true },
-      { label: "Ut wisi enim ad minim veniam", ok: true },
-      { label: "Duis autem vel eum", ok: true },
-      { label: "Sed diam nonummy nibh", ok: false },
-      { label: "Vel illum dolore eu feugiat", ok: false },
-    ],
-  },
-
-  {
-    name: "Professional",
-    price: "$19.99",
-    color: "blue",
-    features: [
-      { label: "Lorem ipsum dolor sit amet", ok: true },
-      { label: "Ut wisi enim ad minim veniam", ok: true },
-      { label: "Duis autem vel eum", ok: true },
-      { label: "Sed diam nonummy nibh", ok: true },
-      { label: "Vel illum dolore eu feugiat", ok: false },
+      { label: "Relatórios simples", ok: true },
+      { label: "Suporte por e-mail", ok: true },
+      { label: "Backup local", ok: false },
+      { label: "Relatórios detalhados", ok: false },
+      { label: "Suporte WhatsApp", ok: false },
+      { label: "Acesso vitalício a updates", ok: false },
     ],
   },
 
   {
     name: "Premium",
+    oldPrice: "$79.99",
     price: "$49.99",
-    color: "purple",
+    period: "semestral",
+    color: "orange",
     features: [
-      { label: "Lorem ipsum dolor sit amet", ok: true },
-      { label: "Ut wisi enim ad minim veniam", ok: true },
-      { label: "Duis autem vel eum", ok: true },
-      { label: "Sed diam nonummy nibh", ok: true },
-      { label: "Vel illum dolore eu feugiat", ok: true },
+      { label: "Suporte por e-mail", ok: true },
+      { label: "Backup local", ok: true },
+      { label: "Relatórios detalhados", ok: true },
+      { label: "Suporte WhatsApp", ok: false },
+      { label: "Acesso vitalício a updates", ok: false },
+    ],
+  },
+
+  {
+    name: "Vitalício",
+    oldPrice: "$149.99",
+    price: "$89.99",
+    period: "vitalício",
+    color: "green",
+    features: [
+      { label: "Suporte por e-mail", ok: true },
+      { label: "Backup local", ok: true },
+      { label: "Relatórios detalhados", ok: true },
+      { label: "Suporte WhatsApp", ok: true },
+      { label: "Acesso vitalício a updates", ok: true },
     ],
   },
 ];
@@ -65,9 +75,19 @@ export default function Pricing() {
             <div className="plan-header">
               <span className="plan-name">{plan.name}</span>
 
-              <h3 className="plan-price">{plan.price}</h3>
+              {plan.oldPrice ? (
+                <div className="plan-price-wrapper">
+                  <span className="plan-old">
+                    De <s>{plan.oldPrice}</s>
+                  </span>
 
-              <span className="plan-period">per month</span>
+                  <h3 className="plan-price">Por {plan.price}</h3>
+                </div>
+              ) : (
+                <h3 className="plan-price">{plan.price}</h3>
+              )}
+
+              <span className="plan-period">{plan.period}</span>
             </div>
 
             <ul className="plan-features">
@@ -78,7 +98,9 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <button className="plan-button">Subscribe</button>
+            <div className="plan-button-wrapper">
+              <button className="plan-button">Conhecer!</button>
+            </div>
           </div>
         ))}
       </div>

@@ -3,7 +3,7 @@ import { useState } from "react";
 const questions = [
   {
     q: "Preciso entender de finanças?",
-    a: "Não. O Preciko faz todos os cálculos automaticamente.",
+    a: "Não. O APPRIX faz todos os cálculos automaticamente.",
   },
 
   {

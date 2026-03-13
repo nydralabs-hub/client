@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h3 className="logo">Preciko</h3>
+            <h3 className="logo">APPRIX</h3>
 
             <p>
               A forma inteligente de calcular o preço ideal dos seus produtos e
@@ -47,7 +47,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} Preciko — Todos os direitos reservados
+            © {new Date().getFullYear()} APPRIX — Todos os direitos reservados
           </p>
         </div>
       </div>
