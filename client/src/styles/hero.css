@@ -85,6 +85,9 @@
 /* MOBILE */
 
 @media (max-width: 900px) {
+  .hero {
+    padding: 2px 0 80px 0;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
 
