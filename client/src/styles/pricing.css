@@ -1,13 +1,14 @@
 .pricing-section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   background: #f1f5f9;
   text-align: center;
 }
 
 .pricing-title {
   font-size: 36px;
-  margin-bottom: 60px;
+  margin-bottom: 12px;
   color: #0f172a;
+  margin-top: 12px;
 }
 
 /* WRAPPER */
@@ -140,6 +141,68 @@
   font-weight: 600;
   cursor: pointer;
   margin: 10px;
+}
+
+/* HEADER */
+
+.pricing-tag {
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pricing-sub {
+  margin-top: 10px;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* COUNTDOWN */
+
+.pricing-countdown {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.pricing-countdown div {
+  background: white;
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-countdown strong {
+  display: block;
+  font-size: 26px;
+  color: #6366f1;
+}
+
+.pricing-countdown span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* BADGE */
+
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #facc15;
+  color: #000;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* HIGHLIGHT */
+
+.highlight {
+  transform: scale(1.05);
 }
 
 /* MOBILE CAROUSEL */

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/navbar.css";
 import mockup from "../assets/logo-3.png";
+import { openPlayStore } from "../utils/appLinks";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -18,7 +19,9 @@ export default function Navbar() {
           <a href="#pricing">Planos</a>
           <a href="#faq">FAQ</a>
 
-          <button className="btn-primary">Baixar App</button>
+          <button className="btn-primary" onClick={openPlayStore}>
+            Baixar App
+          </button>
         </div>
 
         <div

@@ -1,0 +1,93 @@
+/* CTA SECTION */
+
+.cta-section {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.cta-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+/* TITLE */
+
+.cta-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+
+.cta-text {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+
+.cta-button {
+  background: white;
+  color: #4f46e5;
+  border: none;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+/* BACKGROUND DECORATION */
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  top: -200px;
+  left: -200px;
+}
+
+.cta-section::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: -200px;
+  right: -150px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .cta-text {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}

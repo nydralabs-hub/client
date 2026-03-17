@@ -9,6 +9,9 @@ import Testimonials from "../components/Testimonials";
 import CTA from "../components/Cta";
 import FAQ from "../components/Faq";
 import Footer from "../components/Footer";
+import BusinessGoals from "../components/BusinessGoals";
+import WhyChoose from "../components/WhyChoose";
+import NoSpreadsheet from "../components/NoSpreadsheet";
 
 export default function Landing() {
   return (
@@ -19,12 +22,24 @@ export default function Landing() {
         <Hero />
       </section>
 
+      <section id="simplicity">
+        <NoSpreadsheet />
+      </section>
+
       <section id="features">
         <FeaturesApp />
       </section>
 
+      <section id="goals">
+        <BusinessGoals />
+      </section>
+
       <section id="cta">
         <CTA />
+      </section>
+
+      <section id="why">
+        <WhyChoose />
       </section>
 
       <section id="how">
