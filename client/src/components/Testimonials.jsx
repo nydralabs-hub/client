@@ -36,8 +36,19 @@ const testimonials = [
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
+  const [visibleItems, setVisibleItems] = useState(3);
 
-  const visibleItems = 3;
+  useEffect(() => {
+    const update = () => {
+      setVisibleItems(window.innerWidth < 900 ? 1 : 3);
+    };
+
+    update();
+    window.addEventListener("resize", update);
+
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   const maxIndex = testimonials.length - visibleItems;
 
   useEffect(() => {

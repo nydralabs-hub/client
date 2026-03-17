@@ -162,7 +162,7 @@
 .pricing-countdown {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 12px;
   margin-bottom: 50px;
 }
 
