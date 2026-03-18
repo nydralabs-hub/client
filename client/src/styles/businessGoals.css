@@ -106,6 +106,10 @@
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
+  .business {
+    padding: 80px 0;
+    background: #f8fafc;
+  }
   .business-content h2 {
     font-size: 36px;
     line-height: 1.1;

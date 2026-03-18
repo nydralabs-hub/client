@@ -71,6 +71,9 @@
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
+  .nosheet {
+    padding: 80px 0;
+  }
   .nosheet-content h2 {
     font-size: 36px;
     line-height: 1.1;

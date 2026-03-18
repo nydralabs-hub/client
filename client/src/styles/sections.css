@@ -189,6 +189,10 @@
 /* MOBILE */
 
 @media (max-width: 900px) {
+  .how-section {
+    /* background: #f8fafc; */
+    padding: 40px 0;
+  }
   .features-grid {
     grid-template-columns: 1fr 1fr;
   }
