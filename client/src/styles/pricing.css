@@ -208,6 +208,9 @@
 /* MOBILE CAROUSEL */
 
 @media (max-width: 768px) {
+  .pricing-title {
+    line-height: 1.1;
+  }
   .pricing-wrapper {
     overflow-x: auto;
     flex-wrap: nowrap;

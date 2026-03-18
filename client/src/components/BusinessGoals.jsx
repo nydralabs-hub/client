@@ -16,10 +16,7 @@ export default function BusinessGoals() {
         <div className="business-content">
           <span className="business-tag">Fique sempre atualizado</span>
 
-          <h2>
-            Mantenha o foco em <br />
-            Seus objetivos de negócios
-          </h2>
+          <h2>Mantenha o foco em Seus objetivos de negócios</h2>
 
           <p>
             Descubra insights sobre seus preços, margens e custos em tempo real.

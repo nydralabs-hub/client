@@ -28,13 +28,13 @@ export default function Footer() {
             <a href="#pricing">Planos</a>
           </div>
 
-          <div className="footer-links">
+          {/* <div className="footer-links">
             <h4>Empresa</h4>
 
             <a href="#">Sobre</a>
             <a href="#">Blog</a>
             <a href="#">Contato</a>
-          </div>
+          </div> */}
 
           <div className="footer-links">
             <h4>Legal</h4>

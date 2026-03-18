@@ -71,6 +71,11 @@
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
+  .nosheet-content h2 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
   .nosheet-grid {
     grid-template-columns: 1fr;
     text-align: center;
