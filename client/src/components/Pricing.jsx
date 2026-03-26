@@ -5,12 +5,12 @@ const plans = [
   {
     name: "Starter",
     price: "Free",
-    period: "30 dias",
+    period: "15 dias",
     color: "pink",
     features: [
       { label: "Relatórios simples", ok: true },
       { label: "Cadastro limitado", ok: true },
-      { label: "Suporte por e-mail", ok: false },
+      { label: "Suporte por e-mail", ok: true },
       { label: "Backup local", ok: false },
       { label: "Relatórios detalhados", ok: false },
       { label: "Suporte WhatsApp", ok: false },
@@ -20,8 +20,8 @@ const plans = [
 
   {
     name: "Básico",
-    oldPrice: "$19.99",
-    price: "$9.99",
+    oldPrice: "R$19.99",
+    price: "R$9.99",
     period: "por mês",
     color: "purple",
     highlight: false,
@@ -37,8 +37,8 @@ const plans = [
 
   {
     name: "Premium",
-    oldPrice: "$79.99",
-    price: "$49.99",
+    oldPrice: "R$54.99",
+    price: "R$29.99",
     period: "semestral",
     color: "orange",
     highlight: true,
@@ -53,8 +53,8 @@ const plans = [
 
   {
     name: "Vitalício",
-    oldPrice: "$149.99",
-    price: "$89.99",
+    oldPrice: "R$99.99",
+    price: "R$49.99",
     period: "vitalício",
     color: "green",
     features: [

@@ -81,8 +81,8 @@
 }
 
 .plan-old {
-  font-size: 0.85rem;
-  color: #94a3b8;
+  font-size: 16px;
+  color: #dfe7f2;
 }
 
 .plan-old s {
@@ -91,7 +91,7 @@
 
 .plan-price {
   font-size: 34px;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .plan-period {
